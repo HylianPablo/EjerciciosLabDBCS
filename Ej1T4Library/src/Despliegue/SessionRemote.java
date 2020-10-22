@@ -17,4 +17,10 @@ public interface SessionRemote {
     public void frase();
     
     public void create(Productos producto);
+    
+    public Productos find(Integer id);
+    
+    public void edit(Productos productos);
+    
+    public void remove(Productos productos);
 }

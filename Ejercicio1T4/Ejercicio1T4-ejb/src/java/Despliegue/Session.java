@@ -30,5 +30,19 @@ public class Session implements SessionRemote{
         productosFacade.create(productos);
     }
 
+    @Override
+    public Productos find(Integer id){
+        return productosFacade.find(id);
+    }
+    
+    @Override
+    public void edit(Productos productos){
+        productosFacade.edit(productos);
+    }
+    
+    @Override
+    public void remove(Productos productos){
+        productosFacade.remove(productos);
+    }
     
 }

@@ -28,6 +28,14 @@ public class Main {
         p.setItemId("99");
         p.setProdPrice(10f);
         session.create(p);
+        
+        Productos p2 = session.find(6);
+        System.out.println("RETRIEVE PRODDESCRIPTION: "+p2.getProdDescription());
+        
+        p2.setProdDescription("Producto test MODIFIED");
+        session.edit(p2);
+        
+        session.remove(p);
                 
     }
     
